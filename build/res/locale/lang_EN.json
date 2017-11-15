@@ -1,0 +1,13 @@
+{
+    "general":  {
+        "wrongSizeMessage": "Your device does not meet minimum screen resolution requirements",
+        "preload": "Loading...",
+        "offline": "Connection to server is lost",
+	    "serverlost": "Server is unavailable",
+    },
+    
+  
+    "errors": {
+		"balance.notEnoughCredits":"Not enough credits on your account"
+    }
+}
