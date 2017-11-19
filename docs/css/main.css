@@ -1,0 +1,55 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #D4D4D4;
+    height: 100%;
+    /*-webkit-font-smoothing: none;*/
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html:-ms-fullscreen {
+  width: 100%;
+}
+
+.main {
+    position: absolute;
+    min-width: 60vh;
+    min-height: 100vh;
+	border-radius: 3px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+    background-color: #1F6EFF;  /* Old browsers */
+    background: -moz-linear-gradient(top, #1f6eff 0%, #207cca 36%, #1c56d0 68%, #1c56d0 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #1f6eff 0%,#207cca 36%,#1c56d0 68%,#1c56d0 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #1f6eff 0%,#207cca 36%,#1c56d0 68%,#1c56d0 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6eff', endColorstr='#1c56d0',GradientType=0 ); /* IE6-9 */
+    top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+
+@media screen and (orientation: portrait) {
+    .main { 
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 100%;
+        min-height: 100vh;
+    }
+  }
+  
+  @media screen and (orientation: landscape) {
+    .main { 
+        max-height: 100%;
+        min-height: 100vh;
+        min-width: 60vh;
+    }
+  }
+
+
+ 
