@@ -1,0 +1,40 @@
+.triangle {
+    width: 0; 
+    height: 0; 
+    border-left: 3vh solid transparent;
+    border-right: 3vh solid transparent;
+    margin: 0 auto;
+    border-top: 4vh solid #1E68CD; /* height */
+}
+
+.currency-header-bottom {
+    margin-left: 5vh;
+    font-weight: normal;
+    font-size: 3.9em;
+    margin-top: 8vh;
+    margin-bottom: 0;
+}
+
+.bottom-slide-result {
+    font-size: 3.9em;
+    height: 1.2em;
+    margin-top: 2.3vh;
+    margin-bottom: 0;
+    padding-right: 5vh;
+}
+
+.bottomPanel-rates {
+    width: 33%;
+    height: 4vh;
+    border-radius: 1vh;
+    font-size: 1.1em;
+    padding: 1px 0;
+    margin: 1vh 8%;
+    background-color: #225DCC;
+}
+
+
+.bottomPanel-rates-content {
+   margin-right: 18%;
+   color: #C1C9E2;
+}

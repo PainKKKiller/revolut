@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import { bindActionCreators } from 'redux';
-import {  } from '../actions';
+import { fetchFXRates } from '../actions';
 
-import BlankPage from './comps/views/BlankPage';
+import ExchangeView from './views/ExchangeView';
+import WalletView from './views/WalletView';
 
 import { Router as Router2, browserHistory, Redirect } from 'react-router';
 
@@ -25,6 +26,23 @@ import {
   constructor(props) {
     super(props);
 
+    this.pollFXRates = this.pollFXRates.bind(this);
+  }
+
+  componentDidMount() {
+    this.props.fetchFXRates("USD");
+
+    this.timer = setInterval(this.pollFXRates, 10000);
+  }
+
+  pollFXRates() {
+    console.log("poll FX rates every 10 seconds...");
+
+    //this.props.fetchFXRates("USD");
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timer);
   }
  
 
@@ -33,27 +51,23 @@ import {
  
     return (
 
-      <div id='game-container' width="1126" height="634">
-        <div>
+      <div style={ { minWidth: '100%', minHeight: '100%' } }>
         <Switch>
-          <Route exact path="/" component={ BlankPage }/>
+          <Route exact path="/" component={ ExchangeView }/>
+          <Route exact path="/wallet" component={ WalletView }/>
         </Switch>
-        </div>
       </div>
     );
   }
 }
 
 
-function mapStateToProps(state) {
-    console.log("app#mapStateToProps");
-    return { session:  state.session };
-}
 
 function mapDispatchToProps(dispatch) {
     var actions = {};
+    actions.fetchFXRates = fetchFXRates;
     return bindActionCreators(actions, dispatch);
 }
 
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
+export default withRouter(connect(null, mapDispatchToProps)(App));

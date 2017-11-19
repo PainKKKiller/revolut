@@ -29,4 +29,4 @@ console.log("version = " + window.version);
       <App />
     </HashRouter>
   </Provider>
-  , document.querySelector('.game-wrapper'));
+  , document.querySelector('.main'));

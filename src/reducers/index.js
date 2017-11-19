@@ -1,10 +1,14 @@
 import { combineReducers } from 'redux';
 
-import SomeReducer from './some_reducer';
+import RatesReducer from './rates_reducer';
+import WalletReducer from './wallet_reducer';
+import ConversionReducer from './conversion_reducer';
 
 
 const rootReducer = combineReducers({
-    someValue: SomeReducer
+    rates: RatesReducer,
+    wallet: WalletReducer,
+    conversion: ConversionReducer
 });
 
 

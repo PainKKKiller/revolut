@@ -23,7 +23,7 @@ module.exports = {
   output: {
     path: BUILD,
     publicPath: '/',
-    filename: 'js/bundle.[githash].js'
+    filename: 'js/bundle.js'
   },
   module: {
     loaders: [{
@@ -42,7 +42,7 @@ module.exports = {
       loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader' })
     },
     {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(jpe?g|png|gif|svg|woff|eot|svg|ttf)$/i,
         loader: 'url-loader?limit=8192&name=img/[hash].[ext]'
     } ]
   },
@@ -64,10 +64,10 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin("./css/bundle.css"),
-    new HtmlWebpackPlugin({
+    /*new HtmlWebpackPlugin({
       title: 'My App',
       template: 'index.tpl.html'
-    }),
+    }),*/
     new webpack.optimize.CommonsChunkPlugin({ name: 'libs', filename: 'js/libs.js' }),
     new WebpackGitHash()
   ]

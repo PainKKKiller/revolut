@@ -40,13 +40,23 @@
     "gsap": "^1.19.1",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
+    "money": "^0.2.0",
+    "nuka-carousel": "^3.0.0",
     "prop-types": "^15.5.10",
+    "pure-react-carousel": "^1.9.9",
     "react": "^15.4.2",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-css-transition-replace": "^3.0.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.3",
     "react-router": "^4.0.0",
     "react-router-dom": "^4.0.0",
+    "react-slick": "^0.15.4",
+    "react-slider": "^0.9.0",
+    "react-swipeable": "^4.2.0",
+    "react-transition-group": "^2.2.1",
     "redux": "^3.0.4",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "slick-carousel": "^1.8.1"
   }
 }

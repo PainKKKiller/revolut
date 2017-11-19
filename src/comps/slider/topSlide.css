@@ -1,0 +1,56 @@
+
+.input {
+    background-color: transparent;
+    color: white;
+    font-size: 3.9em;
+    line-height: 3.9em;
+    height: 2em;
+    padding: 0;
+    width: 15vh;
+    /*border: transparent;*/
+    border-color: rgba(255, 255, 255, 0.24);
+}
+
+.input-invalid {
+    color: red;
+}
+
+.input-span {
+    color: white;
+    font-size: 3.9em;
+    line-height: 2em;
+}
+
+.col-left {
+    display: inline-block;
+    text-align: left;
+    width: 47%;
+    height: 80%;
+}
+
+.col-right {
+    display: inline-block;
+    margin-bottom: 2vh;
+    width: 47%;
+    text-align: right;
+    height: 80%;
+    vertical-align: top;
+}
+
+.kostul {
+    height: 9.3vh;
+}
+
+.currency-header {
+    margin-left: 5vh;
+    font-weight: normal;
+    font-size: 3.9em;
+    margin-top: 12vh;
+    margin-bottom: 0;
+}
+
+.currency-in-wallet {
+    margin-left: 5vh;
+    margin-top: 0.1em;
+    color: #C1C9E2;
+}
